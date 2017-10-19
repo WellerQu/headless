@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "lint": "eslint . --fix"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^8.0.1",
+        "eslint": "^4.9.0",
+        "puppeteer": "^0.12.0"
+    }
+}
