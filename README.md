@@ -1,8 +1,32 @@
-# Eslint & Headless Chrome
+# Headless Chrome & Eslint
+
+## Headless Chrome
+
+### Startup
+
+- 安装无头浏览器Node开发包
+
+    ```zsh
+    yarn add puppeteer --dev
+    ```
+- 编写脚本代码
+
+    ```javascript
+    const browser = await puppeteer.launch({ ...options })
+    const page = await browser.newPage();
+    // some actions
+    await browser.close()
+    ```
+
+### Reference
+
+[Puppeteer on Github](https://github.com/GoogleChrome/puppeteer/)
+
+[Puppeteer API](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#)
 
 ## Eslint
 
-### start up
+### Startup
 
 - 安装lint环境
 
@@ -20,6 +44,7 @@
 
 - 配置约束规则
 
+    package.json
     ```json
     {
         "scripts": {
@@ -28,6 +53,7 @@
     }
     ```
 
+    .eslintrc.yml
     ```yaml
     env:
       es6: true
@@ -65,10 +91,12 @@
     yarn lint
     ```
 
-### reference
+### Reference
 
 [Eslint on Github](https://github.com/eslint/eslint)
 
 [Eslint](https://eslint.org/docs/user-guide/getting-started)
 
-## Headless Chrome
+## End
+
+Enjoy coding
